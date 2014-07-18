@@ -1,0 +1,318 @@
+/*VARIABLES*/
+/*NAV BAR*/
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #0033FF;
+  z-index: 1;
+  padding: 10px;
+  color: white;
+  opacity: 0.9;
+}
+
+.pure-u-1-4 {
+  display: block;
+  margin-top: 10px;
+  font-size: 17px;
+  color: white;
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+
+a, a:hover {
+  border-bottom: 3px solid white;
+  color: orange;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+a:hover {
+  background-color: black;
+  opacity: 0.7;
+  -webkit-transform: rotate(360deg);
+  transition: all 0.3s linear;
+}
+
+.travels {
+  font-size: 32px;
+  margin-right: 6%;
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+
+/*CONTENT: BORDERS*/
+.intro1, .bei, .shang, .wonder, .tram,
+.wah, .ww2, .tor, .mon, .falls {
+  border-radius: 25%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.intro1 {
+  border: 20px solid #798d6f;
+}
+
+.bei {
+  border: 20px dashed rgba(243, 69, 51, 0.9);
+}
+
+.shang {
+  border: 20px dotted #254d72;
+}
+
+.wonder {
+  border: 20px double #637581;
+}
+
+.tram {
+  border: 20px groove #2e3762;
+}
+
+.wah {
+  border: 20px ridge #4a5b50;
+}
+
+.ww2 {
+  border: 20px inset #034d8a;
+}
+
+.tor {
+  border: 20px outset #356164;
+}
+
+.mon {
+  border: 20px solid #335da2;
+}
+
+.falls {
+  border: 20px solid #428b69;
+}
+
+/*BACKGROUND: COLOR AND IMAGES*/
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro, .beijing, .shanghai,
+.wall, .peak, .wahiawa,
+.honolulu, .toronto, .montreal, .niagara {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  padding-top: 17%;
+  line-height: 30px;
+}
+
+.intro {
+  background-image: url("/img/map.jpg");
+}
+
+.beijing {
+  background-image: url("/img/beijing.jpg");
+}
+
+.shanghai {
+  background-image: url("/img/shanghai.jpg");
+}
+
+.wall {
+  background-image: url("/img/wall.jpg");
+}
+
+.peak {
+  background-image: url("/img/peak.jpg");
+}
+
+.wahiawa {
+  background-image: url("/img/maze.jpg");
+}
+
+.honolulu {
+  background-image: url("/img/pearl.jpg");
+}
+
+.toronto {
+  background-image: url("/img/cn.jpg");
+}
+
+.montreal {
+  background-image: url("/img/montreal.jpg");
+}
+
+.niagara {
+  background-image: url("/img/falls.jpg");
+}
+
+.bei:hover, .shang:hover, .wonder:hover,
+.tram:hover, .wah:hover, .ww2:hover,
+.tor:hover, .mon:hover, .falls:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*TEXT*/
+.introduction {
+  font-size: 80px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bold;
+}
+
+.pearl, .great, .pineapple,
+.olympic, .harbor, .nest,
+.hkg, .ni, .cn {
+  font-size: 80px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bold;
+  line-height: 90px;
+}
+
+.introp, .beijing ul, .shanghai ul, .wall ul,
+.peak ul, .wahiawa ul, .honolulu ul,
+.toronto ul, .montreal ul, .niagara ul {
+  font-family: Comic Sans MS;
+  font-size: 25px;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  display: none;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 500px) {
+  /*IMAGE ALIGNMENT*/
+  img {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+
+  .intro, .beijing, .shanghai, .wall,
+  .peak, .wahiawa, .honolulu, .toronto,
+  .montreal, .niagara {
+    background-image: none;
+  }
+
+  .intro {
+    opacity: 1;
+    padding-top: 100px;
+    width: 100%;
+    position: absolute;
+    background-image: none;
+    color: white;
+  }
+
+  .beijing {
+    padding-top: 100px;
+    color: white;
+  }
+
+  .shanghai {
+    background-image: none;
+    margin-top: 350px;
+  }
+
+  .wall {
+    margin-top: 500px;
+  }
+
+  .peak {
+    margin-top: 550px;
+  }
+
+  .wahiawa {
+    padding-top: 100px;
+  }
+
+  .honolulu {
+    margin-top: 550px;
+  }
+
+  .toronto {
+    padding-top: 100px;
+  }
+
+  .montreal {
+    margin-top: 450px;
+  }
+
+  .niagara {
+    margin-top: 600px;
+  }
+
+  /*BACKGROUND COLOR*/
+  .intro1 {
+    background-color: #081738;
+  }
+
+  .bei {
+    background-color: rgba(81, 60, 67, 0.7);
+  }
+
+  .shang {
+    background-color: rgba(94, 58, 81, 0.6);
+  }
+
+  .wonder {
+    background-color: rgba(166, 140, 115, 0.7);
+  }
+
+  .tram {
+    background-color: rgba(34, 185, 239, 0.7);
+  }
+
+  .wah {
+    background-color: rgba(136, 161, 96, 0.9);
+  }
+
+  .ww2 {
+    background-color: #528dc7;
+  }
+
+  .tor {
+    background-color: rgba(75, 113, 126, 0.9);
+  }
+
+  .mon {
+    background-color: rgba(43, 82, 140, 0.8);
+  }
+
+  .falls {
+    background-color: rgba(70, 140, 109, 0.8);
+  }
+
+  .introduction {
+    font-size: 50px;
+  }
+
+  .introp {
+    font-size: 17px;
+  }
+
+  /*TEXT*/
+  .travels {
+    display: block;
+    text-align: center;
+  }
+
+  .pineapple {
+    font-size: 50px;
+  }
+
+  .wahiawa ul {
+    font-size: 25px;
+  }
+
+  header {
+    position: absolute;
+  }
+}
